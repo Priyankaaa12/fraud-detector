@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/
+models/*.pkl
+models/*.json
+fraud_alerts.db
+.DS_Store
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+notebooks/.ipynb_checkpoints/
