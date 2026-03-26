@@ -13,3 +13,4 @@ dist/
 build/
 .pytest_cache/
 notebooks/.ipynb_checkpoints/
+key.env.txt 
