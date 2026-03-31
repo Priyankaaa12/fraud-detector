@@ -163,4 +163,4 @@ fraud-detector/
 
 ---
 
-*Built as part of a job portfolio for ML engineering roles in fintech.*
+
