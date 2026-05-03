@@ -90,6 +90,7 @@ async def predict_fraud(transaction: TransactionInput, include_llm: bool = True)
                 action = llm_result['action']
                 action_reason = llm_result['action_reason']
             except Exception as e:
+                print(f"❌ LLM ERROR: {traceback.format_exc()}")
                 llm_explanation = f"Explanation unavailable: {str(e)}"
 
         response = PredictionResponse(
@@ -152,7 +153,8 @@ async def get_statistics():
 def _save_alert(response: PredictionResponse):
     try:
         conn = sqlite3.connect(DB_PATH)
-        top_factor = response.top_factors[0]['description'] if response.top_factors else ''
+        # FIXED: use attribute access instead of dict subscript
+        top_factor = response.top_factors[0].description if response.top_factors else ''
         conn.execute("""INSERT INTO alerts
             (transaction_id, amount, fraud_probability, risk_score, risk_level,
              action, explanation, top_factor, timestamp)

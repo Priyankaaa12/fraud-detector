@@ -2,6 +2,26 @@
 
 > An end-to-end ML system that detects fraudulent transactions and generates plain-English explanations using LLMs — built for financial compliance teams.
 
+## Screenshots
+
+### Live Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Alerts
+![Alerts](screenshots/alerts.png)
+
+### Fraud Analysis
+![Analysis](screenshots/analysis1.png)
+
+### Fraud Analysis2
+![Analysis2](screenshots/analysis2.png)
+
+### Fraud Analysis
+![Analysis3](screenshots/analysis3.png)
+
+### SHAP Explanation
+![SHAP](screenshots/shap.png)
+
 ## What This Project Does
 
 Most fraud detection systems just return a score. This system tells you **why**.
