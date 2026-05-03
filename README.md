@@ -70,7 +70,7 @@ Transaction JSON
 |-------|-----------|-----|
 | ML Model | LightGBM | Best on tabular data, fast CPU training |
 | Explainability | SHAP (TreeExplainer) | Fast, exact, industry standard |
-| LLM | Claude API | Best narrative quality |
+| LLM | Groq API | Best narrative quality |
 | API | FastAPI | Auto-docs, type validation, async |
 | Dashboard | Streamlit | Fast to build, great for demos |
 | Database | SQLite | Zero config, portable |
@@ -92,7 +92,7 @@ Download IEEE-CIS Fraud Detection from [Kaggle](https://www.kaggle.com/c/ieee-fr
 ### 3. Add your API key
 Create `.env`:
 ```
-ANTHROPIC_API_KEY=your_key_here
+GROQ_API_KEY=your_key_here
 ```
 
 ### 4. Train the model (~10 min on CPU)
@@ -183,4 +183,4 @@ fraud-detector/
 
 ---
 
-*Built as part of a job portfolio for ML engineering roles in fintech.*
+
