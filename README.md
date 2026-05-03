@@ -44,7 +44,7 @@ Transaction JSON
       │                                         │
       │                                         ▼
       │                               ┌──────────────────┐
-      │                               │   Claude API     │
+      │                               │  Groq API     │
       │                               │  (LLM Narrative) │
       │                               └──────────────────┘
       │                                         │
